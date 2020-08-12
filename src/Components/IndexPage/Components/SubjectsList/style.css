@@ -1,0 +1,22 @@
+.subjects {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.subjects > * {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0.5rem 0.5rem;
+}
+
+.subjects h5 {
+  margin-bottom: 1rem;
+}
+
+.subjects .card i {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}

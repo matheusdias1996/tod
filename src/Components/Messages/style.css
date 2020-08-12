@@ -1,0 +1,45 @@
+.message {
+  border-style: solid;
+  border-width: 1px;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  top: 72px;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.message.empty {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.message.error.fading-out, .message.success.fading-out {
+  opacity: 0;
+}
+
+.message.success, .message.error {
+  opacity: 1;
+  visibility: visible;
+}
+
+.message.success {
+  background-color: #cceaf4;
+  border-color: #2c94b7;
+  color: #2c94b7;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #cb2026;
+}
+
+.message i {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}

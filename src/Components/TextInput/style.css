@@ -1,0 +1,39 @@
+.textinput {
+  position: relative;
+}
+
+.textinput > *:first-child {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 0 5px 1px #bbbbbb;
+  border-radius: 0.5rem;
+  color: inherit;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.textinput > textarea:first-child {
+  line-height: 1.25rem;
+}
+
+.textinput > *:first-child::placeholder {
+  color: #cccccc;
+}
+
+.textinput > *:first-child:focus, .textinput > *:first-child:hover {
+  box-shadow: 0 0 5px 3px #bbbbbb;
+}
+
+.textinput > *:first-child:read-only {
+  color: #aaaaaa;
+}
+
+.textinput i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}

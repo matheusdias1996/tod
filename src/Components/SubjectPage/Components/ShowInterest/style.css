@@ -1,0 +1,56 @@
+.show-interest {
+  position: relative;
+}
+
+.show-interest .menu, .show-interest .option {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px #bbbbbb;
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.show-interest .menu:hover, .show-interest .option:hover {
+  box-shadow: 0 0 5px 3px #bbbbbb;
+}
+
+.show-interest .menu {
+  height: 75px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 75px;
+  z-index: 20;
+}
+
+.show-interest .option-container {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.show-interest .option-container.selected .option {
+  background-color: #cceaf4;
+  border-color: #2c94b7;
+  color: #2c94b7;
+}
+
+.show-interest .option {
+  cursor: pointer;
+  height: 65px;
+  width: 65px
+}
+
+.show-interest:hover .option-container {
+  padding: 0 25px;
+  right: 145px;
+}
+
+.show-interest:hover .option-container:last-child {
+  right: 65px;
+}

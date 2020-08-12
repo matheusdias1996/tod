@@ -1,0 +1,35 @@
+.interested-people-item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+}
+
+.interested-people-item > * {
+  flex: 0 0 33.3%;
+  text-align: right;
+}
+
+.interested-people-item > *:first-child {
+  text-align: left;
+}
+
+.interested-people-item > *:last-child {
+  flex: 0 1 33.3%;
+}
+
+.interested-people-item .date {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.interested-people-item .date .icons {
+  color: #888;
+  margin: 0 0.5rem;
+}
+
+.interested-people-item .date .icons i {
+  cursor: pointer;
+  margin: 0 0.5rem;
+}

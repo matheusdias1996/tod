@@ -1,0 +1,71 @@
+.user {
+  align-items: center;
+  background-color: #efefef;
+  color: #ffffff;
+  display: flex;
+  height: 72px;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 2rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.user > div {
+  align-items: center;
+  display: flex;
+}
+
+.user .icon.icon-logout {
+  margin-left: 1rem;
+}
+
+.user .iconlogin {
+  align-items: center;
+  font-size: 1.5rem;
+  border: 2px solid #cb2026;
+  border-radius: 50%;
+  color: #cb2026;
+  cursor: pointer;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  width: 3rem;
+}
+
+.user .icon {
+  align-items: center;
+  font-size: 1.5rem;
+  border: 2px solid #cb2026;
+  border-radius: 50%;
+  color: #cb2026;
+  cursor: pointer;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  width: 3rem;
+}
+
+.user .icontext {
+  font: 100% Arial;
+  font-weight: bold;
+  font-size: 2rem;
+  position: relative;
+  right: 7px;
+  color: #cb2026;
+  cursor: pointer;
+  display: flex;
+  word-wrap: normal;
+}
+
+.user .icon .name {
+  font-weight: bold;
+  position: relative;
+  top: 2px;
+}
+
+.user .icon .fa-sign-out-alt {
+  left: 1px;
+  position: relative;
+}

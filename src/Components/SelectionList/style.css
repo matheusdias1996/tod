@@ -1,0 +1,44 @@
+.selectionlist {
+  position: relative;
+  display: flex;
+}
+
+.selectionlist > label {
+  margin-top: 8px;
+}
+
+.selectionlist > *:nth-child(2) {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 0 5px 1px #bbbbbb;
+  border-radius: 0.5rem;
+  color: inherit;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  outline: none;
+  width: 100%;
+}
+
+.selectionlist > textarea:nth-child(2) {
+  line-height: 1.25rem;
+}
+
+.selectionlist > *:nth-child(2)::placeholder {
+  color: #cccccc;
+}
+
+.selectionlist > *:nth-child(2):focus, .selectionlist > *:nth-child(2):hover {
+  box-shadow: 0 0 5px 3px #bbbbbb;
+}
+
+.selectionlist > *:nth-child(2):read-only {
+  color: #aaaaaa;
+}
+
+.selectionlist i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}

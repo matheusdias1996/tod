@@ -1,0 +1,14 @@
+.subject {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 2rem 0;
+}
+
+.subject .interested-people {
+  margin-bottom: 1rem;
+}
+
+.subject .button-container {
+  display: flex;
+  justify-content: center;
+}

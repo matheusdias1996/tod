@@ -1,0 +1,35 @@
+.profile-page {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 2rem 0;
+}
+
+.profile-page h4, .profile-page .icon-container, .profile-page .textinput {
+  margin-bottom: 1rem;
+}
+
+.profile-page .centered {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-page .centered .icon {
+  background-color: #cccccc;
+  border: 0.25rem solid #212121;
+  border-radius: 50%;
+  padding: 1rem 1.25rem;
+}
+
+.profile-page .centered form {
+  min-width: 360px;
+}
+
+.profile-page form .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-page form .button-container.editing {
+  justify-content: flex-end;
+}

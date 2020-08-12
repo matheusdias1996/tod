@@ -1,0 +1,55 @@
+.authentication .cover {
+  width: 100%;
+}
+
+.authentication .authentication-modal-body {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.authentication .authentication-modal-body h3 {
+  margin-top: 0;
+}
+
+.authentication .authentication-modal-body form {
+  flex: 0 0 50%;
+}
+
+.authentication .authentication-modal-body form.login {
+  padding-right: 2.5rem;
+}
+
+.authentication .authentication-modal-body form.register {
+  padding-left: 2.5rem;
+}
+
+.authentication .authentication-modal-body .separator {
+  background-color: #000000;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  width: 1px;
+}
+
+.authentication .authentication-modal-body .textinput {
+  display: block;
+  margin: 1rem 0;
+}
+
+.authentication .authentication-modal-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.authentication .authentication-modal-footer .button {
+  border-color: #cb2026;
+  color: #cb2026;
+}
+
+.authentication .authentication-modal-footer .button:hover {
+  background-color: #cb2026;
+  color: white;
+}

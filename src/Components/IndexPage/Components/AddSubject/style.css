@@ -1,0 +1,19 @@
+.add-subject h2, .add-subject .textinput {
+  margin-bottom: 1rem;
+}
+
+.add-subject .add-subject-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.add-subject .button {
+  background-color: #ffffff;
+  border-color: #cb2026;
+  color: #cb2026;
+}
+
+.add-subject .button:hover {
+  background-color: #cb2026;
+  color: white;
+}

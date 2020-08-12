@@ -1,0 +1,45 @@
+.subject-data {
+  position: relative;
+}
+
+.subject-data .name-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.subject-data > * {
+  margin-bottom: 1.5rem;
+}
+
+.subject-data .name-container .action-button {
+  margin-top: -0.25rem;
+}
+
+.subject-data .crud-button-container {
+  display: flex;
+}
+
+.subject-data .edit-button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 100px);
+}
+
+.subject-data .textinput.description {
+  width: calc(100% - 100px);
+}
+
+.subject-data .action-button:first-child {
+  margin-right: 0.25rem;
+}
+
+.subject-data .name-container > *:first-child {
+  margin-right: 1rem;
+}
+
+.subject-data .show-interest {
+  position: absolute;
+  top: -1.5rem;
+  right: 0;
+}

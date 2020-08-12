@@ -1,0 +1,21 @@
+.modal {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 1px #666666;
+  border-radius: 0.5rem;
+  left: 50%;
+  overflow: auto;
+  max-height: 90vh;
+  padding: 2rem;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 540px;
+  z-index: 100;
+}
+
+.modal .close {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}

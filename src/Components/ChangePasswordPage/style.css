@@ -1,0 +1,17 @@
+.change-password-page {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 2rem 0;
+}
+
+.change-password-page h4, .change-password-page p, .change-password-page .textinput {
+  margin-bottom: 1rem;
+}
+
+.change-password-page form .textinput {
+  max-width: 540px;
+}
+
+.change-password-page form .button-container {
+  display: flex;
+}

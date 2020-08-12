@@ -1,0 +1,17 @@
+.confirm-page {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 2rem 0;
+}
+
+.confirm-page h3, .confirm-page p, .confirm-page .textinput {
+  margin-bottom: 1rem;
+}
+
+.confirm-page form .textinput {
+  max-width: 540px;
+}
+
+.confirm-page form .button-container {
+  display: flex;
+}

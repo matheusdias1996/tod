@@ -1,0 +1,8 @@
+.confirm-modal .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-modal .button-container .button {
+  margin: 1rem 1rem 0;
+}

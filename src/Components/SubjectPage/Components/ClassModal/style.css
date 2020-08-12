@@ -1,0 +1,45 @@
+.class-modal h2, .class-modal .collapsable-list {
+  margin-bottom: 1rem;
+}
+
+.class-modal .form-group {
+  margin-bottom: 1rem;
+}
+
+.class-modal .form-group label {
+  margin-right: 1rem;
+}
+
+.class-modal .react-datepicker-wrapper .react-datepicker__input-container input {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 0 5px 1px #bbbbbb;
+  border-radius: 0.5rem;
+  color: inherit;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  outline: none;
+}
+
+.class-modal .react-datepicker-wrapper .react-datepicker__input-container input::placeholder {
+  color: #cccccc;
+}
+
+.class-modal .react-datepicker-wrapper .react-datepicker__input-container input:focus,
+.class-modal .react-datepicker-wrapper .react-datepicker__input-container input:hover {
+  box-shadow: 0 0 5px 3px #bbbbbb;
+}
+
+.class-modal .textinput {
+  margin-bottom: 1rem;
+}
+
+.class-modal .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.class-modal .button-container .button {
+  margin: 0 0.5rem;
+}

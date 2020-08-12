@@ -1,0 +1,17 @@
+.forgot-password-page {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 2rem 0;
+}
+
+.forgot-password-page h4, .forgot-password-page p, .forgot-password-page .textinput {
+  margin-bottom: 1rem;
+}
+
+.forgot-password-page form .textinput {
+  max-width: 540px;
+}
+
+.forgot-password-page form .button-container {
+  display: flex;
+}
