@@ -52,6 +52,7 @@ export const updateClassReceived = createAction('UPDATE_CLASS_RECEIVED')
 export const updateFormField = createAction('UPDATE_FORM_FIELD')
 export const updateSubjectRequest = createAction('UPDATE_SUBJECT_REQUEST')
 export const updateSubjectsFilter = createAction('UPDATE_SUBJECTS_FILTER')
+export const updateSubjectsSort = createAction('UPDATE_SUBJECTS_SORT')
 export const updateUserRequest = createAction('UPDATE_USER_REQUEST')
 
 export const addAttendedRequest = createAction('addAttended') 

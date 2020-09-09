@@ -3,6 +3,7 @@ import LinesEllipsis from 'react-lines-ellipsis'
 
 import Card from '../../../Card'
 import ConfirmModal from '../../../ConfirmModal'
+import sorters from '../SubjectsSort/sorters'
 import './style.css'
 
 class SubjectsList extends Component {
@@ -13,7 +14,7 @@ class SubjectsList extends Component {
   }
 
   render() {
-    const { deleteSubject, openModal, role, selectedSubject, subjects, subjectsFilter, token } = this.props
+    const { deleteSubject, openModal, role, selectedSubject, subjects, subjectsFilter, subjectsSort, token } = this.props
     const lowerCaseFilter = subjectsFilter.toLowerCase()
 
     const filtered = subjects.filter(function(subject) {
@@ -21,9 +22,11 @@ class SubjectsList extends Component {
         || subject.name.toLowerCase().includes(lowerCaseFilter)
     })
 
+    const sorted = filtered.sort(sorters[subjectsSort]);
+
     return (
       <div className="subjects">
-        { filtered.map(subject => (
+        { sorted.map(subject => (
           <div  key={subject._id}>
             <Card href={'/subject/' + subject._id}>
               <h5>{ subject.name }</h5>

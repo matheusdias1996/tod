@@ -2,6 +2,7 @@ import React from 'react'
 import { Redirect} from 'react-router-dom'
 
 import AddSubject from './Components/AddSubject'
+import SubjectsSort from './Components/SubjectsSort'
 import SubjectsFilter from './Components/SubjectsFilter'
 import SubjectsList from './Components/SubjectsList'
 import './style.css'
@@ -15,6 +16,7 @@ const IndexPage = ({ loggedIn }) => {
     <div className="index">
       <div className="top">
         <h1 className="light-gray"><i className="far fa-copy"></i> Subjects</h1>
+        <SubjectsSort />
         <SubjectsFilter />
       </div>
       <SubjectsList />

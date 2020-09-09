@@ -28,6 +28,7 @@ import {
   updateCheckboxesGroup,
   updateFormField,
   updateSubjectsFilter,
+  updateSubjectsSort,
 } from './actions'
 
 import initialState from './initialState'
@@ -256,5 +257,9 @@ export default handleActions({
   [updateSubjectsFilter]: (state, action) => ({
     ...state,
     subjectsFilter: action.payload,
+  }),
+  [updateSubjectsSort]: (state, action) => ({
+    ...state,
+    subjectsSort: action.payload,
   }),
 }, initialState)

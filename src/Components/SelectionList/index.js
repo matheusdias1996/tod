@@ -2,7 +2,7 @@ import React from 'react'
 
 import './style.css'
 
-const SelectionList = ({ className, disabled, list, placeholder, ...rest }) => {
+const SelectionList = ({ className, disabled, list, unit, placeholder, ...rest }) => {
   
   let select = (
     <select
@@ -11,7 +11,7 @@ const SelectionList = ({ className, disabled, list, placeholder, ...rest }) => {
     >
       { list.map((value, index) => (
         <option className="selection-item" key={index} value={value}>
-          {value} hora(s)
+          {value} {unit}
         </option>
       ))}
     </select>

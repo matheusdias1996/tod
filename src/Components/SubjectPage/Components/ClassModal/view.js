@@ -30,6 +30,7 @@ const ClassModal = ({ close, form, onSave, open, scheduleType, title, updateDate
             <SelectionList
               onChange={ (e) => { updateFormField('duration', e.target.value) } }
               list={ [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0] }
+              unit = "hour(s)"
               placeholder="Duration"
               value={ form.duration }
             />

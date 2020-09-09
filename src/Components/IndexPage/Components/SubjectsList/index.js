@@ -8,6 +8,7 @@ const mapStateToProps = state => ({
   selectedSubject: state.subject,
   subjects: state.subjects,
   subjectsFilter: state.subjectsFilter,
+  subjectsSort: state.subjectsSort,
   token: state.token,
 })
 

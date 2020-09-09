@@ -76,5 +76,6 @@ export default {
   subject: null,
   subjects: [],
   subjectsFilter: '',
+  subjectsSort: 'Alphabetically',
   token: null,
 }
