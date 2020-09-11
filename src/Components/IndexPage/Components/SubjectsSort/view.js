@@ -8,8 +8,9 @@ const SubjectsSort = ({ subjectsSort, updateSort }) => (
       onChange={e => {updateSort(e.target.value)}}
       list = {[
         'Alphabetically',
-        'Reversed Alphabetically'
-      ]}
+        'Reversed Alphabetically',
+        'By creation date',
+      ]} // Change to sorters.keys()
       placeholder="Sort"
       value={subjectsSort}
     />
