@@ -19,30 +19,38 @@ import Button from '../Button'
 //value = {trained.email}
 //'5d7112d2edbdc93f541b23d9'
 
-const CollapsableList = ({ closeList, itemTemplate, list, name, open, openList, trained, untrained, updateForm, addAttended, deleteAttended, token, id}) => ( 
+
+//Mostrar uma parte disso se não for admin - 37 a 49 dentro do if como no subjectPage (admin)
+//if (role === 'admin') {
+
+const CollapsableList = ({ closeList, itemTemplate, list, name, open, openList, trained, untrained, updateForm, addAttended, deleteAttended, token, id, subjectId, role}) => {
+  return ( 
   <div className={'list ' + (open ? 'opened' : 'closed')}>
     <div className="list-header" onClick={ open ? closeList : openList }>
       <div>{ name.charAt(0).toUpperCase() + name.slice(1) }</div>
       <div><i className={ 'fas fa-angle-' + (open ? 'up' : 'down') }></i></div>
     </div>
-    <div className="list-items">
-    <form className="trained" onSubmit={ e => {
-            e.preventDefault()
-            addAttended(trained.email, 'trained',  '5d71138aedbdc93f541b248b', token)
-          } }>
-            <TextInput
-              onChange={e => {updateForm('trained', 'email', e.target.value)}}
-              placeholder="E-mail"  
-              value = {trained.email}
-            />
-            <input className="hidden" type="submit" />
-          </form>
-          <div className="add-student-button">
-          <Button onClick={ () => { console.log('button');addAttended(trained.email, 'trained',  '5d71138aedbdc93f541b248b', token)}}>Adicionar</Button> 
-          </div>
-          <div className="delete-student-button">
-          <Button onClick={ () => {deleteAttended(trained.email, 'trained', '5d71138aedbdc93f541b248b', token) } }>Deletar</Button> 
-          </div>
+    <div className="list-items">  
+    {role === 'admin' && (
+       <form className="trained" onSubmit={ e => {
+        e.preventDefault()
+        addAttended(trained.email, 'trained',  subjectId, token) // trocar aqui por  subject._id e em outros lugares
+      } }>
+        <TextInput
+          onChange={e => {updateForm('trained', 'email', e.target.value)}}
+          placeholder="E-mail"  
+          value = {trained.email}
+        />
+        <input className="hidden" type="submit" />
+        <div className="add-student-button">
+      <Button onClick={ () => { console.log('button');addAttended(trained.email, 'trained', subjectId, token)}}>Adicionar</Button> 
+      </div>
+      <div className="delete-student-button">
+      <Button onClick={ () => { console.log('button_del'); deleteAttended(trained.email, 'trained', subjectId, token) } }>Deletar</Button> 
+      </div>
+      </form>
+      )
+    }
       { list.map((item, index) => (
         <div className="list-item" key={index}>
           { itemTemplate(item) }
@@ -50,7 +58,7 @@ const CollapsableList = ({ closeList, itemTemplate, list, name, open, openList, 
       ))}
     </div>
   </div>
-)
-
+  )
+}
 export default CollapsableList
 
